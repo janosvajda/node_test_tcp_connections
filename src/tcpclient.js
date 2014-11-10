@@ -11,7 +11,7 @@ function async(arg, callback) {
 
     Client.connect(PORT, HOST, function() {
         console.log('Connected to: ' + HOST + ':' + PORT);
-        Client.write('CLIENT number of : '+arg);
+        Client.write('Client number: '+arg);
     });
 
     Client.on('data', function(data) {  
